@@ -1,0 +1,112 @@
+Mods: {
+	HungerMod: {
+		Buffs: {
+			ModHungry: {
+				DisplayName: Hungry
+				Description: You are quite hungry and feeling weak.
+			}
+
+			ModPeckish: {
+				DisplayName: Peckish
+				Description: You could eat, but it's not so bad.
+			}
+
+			ModStarving: {
+				DisplayName: Starving
+				Description: You are starving to death! Eat immediately!
+			}
+		}
+
+		Configs: {
+			Config: {
+				MealPoints: {
+					Label: Meals
+					Tooltip: Amount of hunger restored
+				}
+
+				BowlPoints: {
+					Tooltip: Amount of hunger restored
+					Label: Bowls/Soups
+				}
+
+				CookedMeatPoints: {
+					Tooltip: Amount of hunger restored
+					Label: CookedMeat
+				}
+
+				JuicePoints: {
+					Tooltip: Amount of hunger restored
+					Label: Juices
+				}
+
+				JunkFoodPoints: {
+					Tooltip: Amount of hunger restored
+					Label: JunkFood
+				}
+
+				CookiePoints: {
+					Tooltip: Amount of hunger restored
+					Label: Cookies
+				}
+
+				MarshmallowPoints: {
+					Tooltip: Amount of hunger restored
+					Label: Marshmallow
+				}
+
+				TeacupPoints: {
+					Tooltip: Amount of hunger restored
+					Label: Teacup
+				}
+
+				PepperPoints: {
+					Tooltip: Amount of hunger restored
+					Label: Pepper
+				}
+
+				DisplayName: Config
+
+				Headers: {
+					Rates: Rates
+					Max-Hunger: Max Hunger
+					Food-Points: Food Points
+				}
+
+				HungerRate: {
+					Label: Hunger Rate
+					Tooltip: Drains per second
+				}
+
+				Starvation: {
+					Label: Starvation-Rate
+					Tooltip: Higher Number is Faster
+				}
+
+				MaxHunger: {
+					Label: What the maximum hunger is
+					Tooltip: ""
+				}
+
+				FruitPoints: {
+					Label: Fruits
+					Tooltip: Amount of hunger restored
+				}
+
+				GourmetPoints: {
+					Label: Gourmet
+					Tooltip: Amount of hunger restored
+				}
+
+				FancyDrinkPoints: {
+					Label: Punches/Smoothies
+					Tooltip: Amount of hunger restored
+				}
+
+				DesertPoints: {
+					Label: Deserts
+					Tooltip: Amount of hunger restored
+				}
+			}
+		}
+	}
+}

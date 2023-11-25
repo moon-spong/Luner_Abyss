@@ -1,0 +1,74 @@
+﻿using Microsoft.Xna.Framework;
+using MrPlagueRaces;
+using luner.Common.Races;
+using System;
+using Terraria;
+using Terraria.Audio;
+using Terraria.GameInput;
+using Terraria.ID;
+using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
+
+namespace Examplarian
+{
+	public class Examplarian : Race
+	{
+        public override void Load()
+        {
+            Description = "plz work.";
+            AbilitiesDescription = $"";
+
+            HairColor = new Color(255, 255, 255);
+            SkinColor = new Color(255, 255, 255);
+            DetailColor = new Color(255, 255, 255);
+            EyeColor = new Color(255, 255, 255);
+
+            StarterShirt = false;
+            StarterPants = false;
+            CensorClothing = false;
+        }
+
+        public override void ResetEffects(Player player)
+        {
+            player.wings = 30;
+            player.wingsLogic = 2;
+            player.wingTimeMax = 90 + (player.statManaMax2 / 2);
+            player.noFallDmg = true;
+        }
+
+        public override void ProcessTriggers(Player player, TriggersSet triggersSet)
+		{
+            var mrPlagueRacesPlayer = player.GetModPlayer<MrPlagueRacesPlayer>();
+
+            if (!player.dead)
+			{
+				if (mrPlagueRacesPlayer.statsEnabled)
+                {
+                    if (MrPlagueRaces.MrPlagueRaces.RaceAbilityKeybind1.Current)
+                    {
+
+                        if (!player.HasBuff(BuffType<Cooldown>()))
+                        { 
+
+                            SoundEngine.PlaySound(SoundID.PlayerHit, player.Center);
+                            player.AddBuff(BuffType<Cooldown>(), 60);
+                        }
+                    }
+                }              
+			}
+		}
+
+        public override void PreUpdate(Player player)
+        {
+            var mrPlagueRacesPlayer = player.GetModPlayer<MrPlagueRacesPlayer>();
+
+            if (!player.dead)
+			{
+				if (mrPlagueRacesPlayer.statsEnabled)
+				{
+					player.AddBuff(146, 2);
+				}
+			}
+        }
+    }
+}

@@ -1,0 +1,16 @@
+Buffs: {
+	ModPeckish: {
+		DisplayName: Peckish
+		Description: You could eat, but it's not so bad.
+	}
+
+	ModHungry: {
+		DisplayName: Hungry
+		Description: You are quite hungry and feeling weak.
+	}
+
+	ModStarving: {
+		DisplayName: Starving
+		Description: You are starving to death! Eat immediately!
+	}
+}
