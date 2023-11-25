@@ -1,0 +1,4 @@
+displayName = Luner Abyss
+author = moon_spong
+modReferences = MrPlagueRaces
+version = 0.1

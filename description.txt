@@ -1,0 +1,13 @@
+[c/4DBF60:Description:]
+idk what i'm doing lol
+
+[c/3ABC7A:Races:]
+-Hunger
+-Nadira
+
+[c/4DBF60:Developed By:]
+- moon_spong (main developer)
+
+[c/4DBF60:Special Credits:]
+- MrPlague#0079 (MrPlague's Authentic Races creator)
+- Tianic#4354 (Mod made from Tianic's Example Race)
